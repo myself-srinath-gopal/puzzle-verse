@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+@import "tailwindcss";
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+.prata-regular {
+  font-family: 'Prata', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  font-weight: 500;
+}
+
+a.active hr {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width:640px) {
+  a.active {
+    background-color: black;
+    color: white;
+  }
+}
+
+.form-input {
+  @apply flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm sm:text-base disabled:cursor-not-allowed disabled:opacity-50;
+}
