@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
-import { assets } from '../assets/assets'
 import Title from '../components/Title'
 import ProductItem from '../components/ProductItem'
 import { useDispatch, useSelector } from 'react-redux'
 import { setFilters, setSortBy } from '../store/slices/productSlice'
+import { assets } from '../assets/assets'
 
 const Shop = () => {
 
